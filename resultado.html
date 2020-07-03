@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+      <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <title>AG Risk</title>
+  </head>
+  <body>
+   
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+      <div id="documento_pdf"></div>
+  </div>
+</div>
+    
+    <div class="wrapper_row row">
+      <div class="sidebar_wrapper col s3">
+        <div class="sidebar z-depth-3">
+        <div class="branding">
+          <img src="images/agrisk_logo.jpg" alt="">
+        </div>
+        <nav class="z-depth-0">
+        <ul>
+            <li class="active"><a href="index.html"><i class="large material-icons left">av_timer</i>Consultar Puntaje</a></li>
+            <li><a href="historial.html"><i class="large material-icons left">search</i> Historial de Consultas</a></li>
+            <li><a href="/reporte"><i class="large material-icons left">pie_chart</i> Reportes</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+    
+      <div class="topnav_col col s9 offset-s3">
+          <div class="topnav_wrapper">
+            <nav class="nav-wrapper">
+              <div class="container-fluid">
+                 <div class="top_left left">
+                     <a href="#"><i class="large material-icons left">person_pin</i> Pedro <i class="large material-icons right">expand_more</i></a>
+                     <span>$50.000</span>
+                 </div>
+                 
+                  
+                  
+                  <ul class="top_right right">
+                     <li><a href="">¿Necesitas ayuda?</a></li>
+                      <li class="light"><a href="/">Cerrar Sesión <i class="large material-icons right">exit_to_app</i></a></li>
+                  </ul>
+              </div>
+            </nav>
+            </div>
+        </div>
+          
+          <div class="content_col col s9 offset-s3 grey lighten-5">
+            <div class="section">
+              <header>
+                  <h1 class="center">Tu puntaje</h1>
+              </header>
+              
+              
+              <div class="card resultado z-depth-3">
+                  <div class="card-content">
+                      <p class="center"><strong>Pedro</strong>, tu cultivo de <strong>arroz</strong> presenta el siguiente perfil de riesgo</p>
+                      
+                      
+                      
+                      <div class="row">
+                          <div class="col s6">
+                              <div class="box center">
+                                  <h3>Tu puntaje es</h3>
+                                  <img src="images/imagen_puntaje.jpg" alt="">
+                                  <span class="puntaje center">AA</span>
+                              </div>
+                          </div>
+                          
+                          <div class="col s6">
+                              <h4>Factores de análisis de riesgo</h4>
+                              
+                              <table>
+                                  <tr>
+                                      <td>Tipo de suelo</td>
+                                      <td>2</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Altura sobre el nivel del mar</td>
+                                      <td>3</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Densidad de siembra</td>
+                                      <td>3</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Vulnerabilidad a factores climáticos</td>
+                                      <td>1</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Sistema de riego</td>
+                                      <td>5</td>
+                                  </tr>
+                              </table>
+                          </div>
+                          
+                          <div class="col s12 center links">
+                             <a class="btn waves-effect waves-light blue modal-trigger" href="#modal1">Ver reporte</a>
+                             <a href="http://localhost:8888/agrisk_app/html//pdf/ejemplo.pdf" class="btn blue outlined z-depth-0" download>Descargar reporte</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+            </div>
+      </div>
+        
+        
+      </div>
+    
+    <footer>
+        <p class="center">Todos los derechos reservados - AG Risk 2020</p>
+    </footer>
+    
+  </body>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <!-- JS -->
+  <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js" integrity="sha512-4ze/a9/4jqu+tX9dfOqJYSvyYd5M6qum/3HpCLr+/Jqf0whc37VUbkpNGHR7/8pSnCFw47T1fmIpwBV7UySh3g==" crossorigin="anonymous"></script>
+  
+  
+  <script>
+//   var stepper = document.querySelector('.stepper');
+//   var stepperInstace = new MStepper(stepper, {
+//       // Default active step.
+//       firstActive: 0,
+//       // Allow navigation by clicking on the next and previous steps on linear steppers.
+//       linearStepsNavigation: true,
+//       // Auto focus on first input of each step.
+//       autoFocusInput: false,
+//       // Set if a loading screen will appear while feedbacks functions are running.
+//       showFeedbackPreloader: true,
+//       // Auto generation of a form around the stepper.
+//       autoFormCreation: false,
+//       // Function to be called everytime a nextstep occurs. It receives 2 arguments, in this sequece: stepperForm, activeStepContent.
+//       validationFunction: defaultValidationFunction, // more about this default functions below
+//       // Enable or disable navigation by clicking on step-titles
+//       stepTitleNavigation: true,
+//       // Preloader used when step is waiting for feedback function. If not defined, Materializecss spinner-blue-only will be used.
+//       feedbackPreloader: '<div class="spinner-layer spinner-blue-only">...</div>'
+//   })
+//   
+//   
+//   function defaultValidationFunction (stepperForm, activeStepContent) {
+//        var inputs = activeStepContent.querySelectorAll('input, textarea, select');
+//        for (let i = 0; i < inputs.length; i++) if (!inputs[i].checkValidity()) return false;
+//        return true;
+//   }
+      
+      
+   // Initialize materilize select fields
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+      
+    $('.dropdown-trigger').dropdown();
+      
+  </script>
+  
+  
+<!--  Open modal-->
+  <script>
+    $(document).ready(function(){
+      $('.modal').modal();
+    });
+  </script>
+  
+  
+  <script>
+      var options = {
+          height: "600px"
+      };
+      
+      PDFObject.embed("http://localhost:8888/agrisk_app/html//pdf/ejemplo.pdf", "#documento_pdf", options);
+  
+  </script>
+  
+  
+  
+</html>

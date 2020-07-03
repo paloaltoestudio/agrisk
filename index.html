@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+      <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <title>AG Risk</title>
+  </head>
+  <body>
+    
+    <div class="wrapper_row row">
+      <div class="sidebar_wrapper col s3">
+        <div class="sidebar z-depth-3">
+        <div class="branding">
+          <img src="images/agrisk_logo.jpg" alt="">
+        </div>
+        <nav class="z-depth-0">
+        <ul>
+            <li class="active"><a href="index.html"><i class="large material-icons left">av_timer</i>Consultar Puntaje</a></li>
+            <li><a href="historial.html"><i class="large material-icons left">search</i> Historial de Consultas</a></li>
+            <li><a href="/reporte"><i class="large material-icons left">pie_chart</i> Reportes</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+    
+      <div class="topnav_col col s9 offset-s3">
+          <div class="topnav_wrapper">
+            <nav class="nav-wrapper">
+              <div class="container-fluid">
+                 <div class="top_left left">
+                     <a href="#"><i class="large material-icons left">person_pin</i> Pedro <i class="large material-icons right">expand_more</i></a>
+                     <span>$50.000</span>
+                 </div>
+                  
+                  <ul class="top_right right">
+                     <li><a href="">¿Necesitas ayuda?</a></li>
+                      <li class="light"><a href="/">Cerrar Sesión <i class="large material-icons right">exit_to_app</i></a></li>
+                  </ul>
+              </div>
+            </nav>
+            </div>
+        </div>
+          
+          <div class="content_col col s9 offset-s3 grey lighten-5">
+            <div class="container-fluid">
+                
+                <div class="section">
+                  <header>
+                      <h1 class="center">CONSULTA EL PERFIL DEL PROYECTO</h1>
+                      <h2 class="center">EN 3 SIMPLES PASOS</h2>
+                  </header>
+                  
+                  
+                  <div class="card pasos z-depth-3">
+                      <div class="card-content">
+                          <form action="">
+                              <ul class="stepper linear">
+                                 
+                                 <li class="step">
+                                    <div class="step-title waves-effect">Paso 1</div>
+                                    <div class="step-content">
+                                      
+                                      <h2>Información del cultivo</h2>
+                                      
+                                       <div class="row">
+                                          
+                                           <div class="input-field col s6">
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Arroz">Arroz</option>
+                                                   <option value="Papa">Papa</option>
+                                               </select>
+                                               <label>Tipo de Cultivo*</label>
+                                           </div>
+                                           <div class="input-field col s6">
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Arroz Secano">Arroz Secano</option>
+                                                   <option value="Arroz Riego">Arroz Riego</option>
+                                               </select>
+                                               <label>Sistema Productivo*</label>
+                                           </div>
+                                           
+                                          
+                                       </div>
+                                       <div class="step-actions">
+                                          <button class="waves-effect waves-dark btn blue next-step" type="submit">SIGUIENTE</button>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 
+                                 <li class="step">
+                                    <div class="step-title waves-effect">Paso 2</div>
+                                    <div class="step-content">
+                                      
+                                      <h2>Diagnóstico del cultivo</h2>
+                                      
+                                       <div class="row">
+                                           
+                                           <div class="input-field col s12">
+                                               <h3>Seleccione cada tipo de Diagnóstico para responder las preguntas correspondientes</h3>
+                                           </div>
+                                           
+                                           <div class="input-field col s6">
+                                               <span>
+                                                   <strong>1. ¿Qué densidad de siembra tiene la finca?</strong> <br>
+                                                   (Alto >5.000Pl/ha, Medio >3.000Pl/ha, Bajo el resto)
+                                            </span>
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Alto">Alto</option>
+                                                   <option value="Medio">Medio</option>
+                                                   <option value="Bajo">Bajo</option>
+                                               </select>
+                                           </div>
+                                           
+                                           <div class="input-field col s6">
+                                               <span>
+                                                   2.¿Qué porcentaje de la finca tiene el cultivo en renovación? <br>
+                                                  (Alto >40%, medio 20-40%, Bajo &#60;20%)
+                                            </span>
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Alto">Alto</option>
+                                                   <option value="Medio">Medio</option>
+                                                   <option value="Bajo">Bajo</option>
+                                               </select>
+                                           </div>
+                                           
+                                           <div class="input-field col s6">
+                                               <span>
+                                                  3.¿Utiliza sistema de riego para la mayor parte del área cultivada?
+                                            </span>
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Siempre">Siempre</option>
+                                                   <option value="Casi Siempre">Casi Siempre</option>
+                                                   <option value="Algunas Veces">Algunas Veces</option>
+                                                   <option value="Casi Nunca">Casi Nunca</option>
+                                                   <option value="Nunca">Nunca</option>
+                                               </select>
+                                           </div>
+                                           
+                                           <div class="input-field col s6">
+                                               <span>
+                                                  4.¿Cuál es el tipo de suelo que más abunda en el cultivo?
+                                            </span>
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Acrilloso">Acrilloso</option>
+                                                   <option value="Franco Acrilloso">Franco Acrilloso</option>
+                                                   <option value="Franco">Franco</option>
+                                                   <option value="Franco Arenoso">Franco Arenoso</option>
+                                                   <option value="Arenoso">Arenoso</option>
+                                               </select>
+                                           </div>
+                                       </div>
+                                       <div class="step-actions">
+                                          <button class="waves-effect waves-dark btn blue next-step" type="submit">SIGUIENTE</button>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 
+                                 <li class="step">
+                                    <div class="step-title waves-effect">Paso 3</div>
+                                    <div class="step-content">
+                                       
+                                       <h2>Ubicación del cultivo</h2>
+                                        
+                                        <div class="row">
+                                          
+                                           <div class="input-field col s4">
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Colombia">Colombia</option>
+                                               </select>
+                                               <label>País*</label>
+                                           </div>
+                                           <div class="input-field col s4">
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Antioquia">Antioquia</option>
+                                               </select>
+                                               <label>Departamento*</label>
+                                           </div>
+                                           <div class="input-field col s4">
+                                               <select id="tipo" name="" class="validate" required>
+                                                   <option value="" disabled selected>Escoje una opción</option>
+                                                   <option value="Concordia">Concordia</option>
+                                               </select>
+                                               <label>Municipio*</label>
+                                           </div>
+                                           <div class="input-field col s4">
+                                               <input id="vereda" type="text" name="" class="validate" required />
+                                               <label for="vereda">Vereda</label>
+                                           </div>
+                                           <div class="input-field col s8">
+                                               <input id="direccion" type="text" name="" class="validate" required />
+                                               <label for="direccion">Dirección</label>
+                                           </div>
+                                        </div>
+                                       
+                                       
+                                       <div class="step-actions">
+                                          <!-- Here goes your actions buttons -->
+                                          <button class="waves-effect waves-dark btn-flat previous-step">ATRÁS</button>
+                                          <button class="waves-effect waves-dark btn blue next-step">SIGUIENTE</button>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 
+                              </ul>
+                          </form>
+                      </div>
+                  </div>
+                  
+                </div>
+                
+            </div>
+      </div>
+        
+        
+      </div>
+    
+    <footer>
+        <p class="center">Todos los derechos reservados - AG Risk 2020</p>
+    </footer>
+    
+  </body>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <!-- JS -->
+  <script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+  
+  
+  <script>
+   var stepper = document.querySelector('.stepper');
+   var stepperInstace = new MStepper(stepper, {
+       // Default active step.
+       firstActive: 0,
+       // Allow navigation by clicking on the next and previous steps on linear steppers.
+       linearStepsNavigation: true,
+       // Auto focus on first input of each step.
+       autoFocusInput: false,
+       // Set if a loading screen will appear while feedbacks functions are running.
+       showFeedbackPreloader: true,
+       // Auto generation of a form around the stepper.
+       autoFormCreation: false,
+       // Function to be called everytime a nextstep occurs. It receives 2 arguments, in this sequece: stepperForm, activeStepContent.
+       validationFunction: defaultValidationFunction, // more about this default functions below
+       // Enable or disable navigation by clicking on step-titles
+       stepTitleNavigation: true,
+       // Preloader used when step is waiting for feedback function. If not defined, Materializecss spinner-blue-only will be used.
+       feedbackPreloader: '<div class="spinner-layer spinner-blue-only">...</div>'
+   })
+   
+   
+   function defaultValidationFunction (stepperForm, activeStepContent) {
+        var inputs = activeStepContent.querySelectorAll('input, textarea, select');
+        for (let i = 0; i < inputs.length; i++) if (!inputs[i].checkValidity()) return false;
+        return true;
+   }
+      
+      
+   // Initialize materilize select fields
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+      
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>
