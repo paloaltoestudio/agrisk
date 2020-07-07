@@ -288,17 +288,40 @@ body {
         padding-top: 50px;
     
         .box {
-            border: 2px solid #449E1A;
+            border-width: 2px;
+            border-style: solid;
             width: 300px;
             border-radius: 10px;
             margin: auto;
-            margin-top: 50px;
+            margin-top: 20px;
+            
+            &.red_box {
+                border-color: #cc2800;
+                
+                h3, span {
+                    color: #cc2800;
+                }
+            }
+            &.orange_box {
+                border-color: #fbb03b;
+                
+                h3, span {
+                    color: #fbb03b;
+                }
+            }
+            &.green_box {
+                border-color: #1a9900;
+                
+                h3, span {
+                    color: #1a9900;
+                }
+            }
+            
         }
         
         h3 {
             font-size: 28px;
             font-weight: bold;
-            color: #449E1A;
             text-transform: uppercase;
         }
         
@@ -328,6 +351,14 @@ body {
         
         .links {
             margin-top: 40px;
+
+            a {
+                margin: 0 5px;
+            }
+
+            i {
+                margin-left: 3px;
+            }
         }
     }
 }
